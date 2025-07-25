@@ -1,0 +1,21 @@
+# secure
+.env
+.secrets
+
+# virtual environments
+.venv/
+.example/
+.examples/
+.docker/
+.tox/
+.mypy/
+
+# python files
+.vscode
+.idea
+*.pyc
+*.pyo
+__pycache__/
+*.egg
+*.whl
+*.egg-info
