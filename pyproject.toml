@@ -1,0 +1,48 @@
+[build-system]
+requires=["hatchling>=1.27", "hatch-vcs"]
+build-backend="hatchling.build"
+
+[project]
+name = "pypractice"
+description = "Backend model components for MVC of practice log / skill builder application"
+license = "MIT"
+authors = [
+    {name = "Sam Aikin"},
+]
+requires-python = ">=3.10"
+dependencies = []
+dynamic = ["version"]
+keywords = [
+    "mvc", "time tracking", "practice log", "practice session",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+
+    "License :: OSI Approved :: MIT License",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.tox]
+requires = ["tox>=4"]
+env_list = ["3.10", "3.11", "3.12", "3.13", "typecheck"]
+
+[tool.tox.env_run_base]
+description = "Run pytest for each python version supported"
+deps = ["pytest>=8.4"]
+commands = [["pytest", "-v", "tests/"]]
+
+[tool.tox.env.typecheck]
+description = "Run mypy type check on package"
+deps = ["mypy>=1.11",]
+commands = [["mypy", "src{/}pypractice"]]
