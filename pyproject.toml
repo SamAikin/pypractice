@@ -46,3 +46,8 @@ commands = [["pytest", "-v", "tests/"]]
 description = "Run mypy type check on package"
 deps = ["mypy>=1.11",]
 commands = [["mypy", "src{/}pypractice"]]
+
+[tool.tox.env.docs]
+description = "Build Sphinx Documentation"
+deps = ["sphinx>=8.2", "sphinx-toolbox"]
+commands = [["sphinx-build", "-M", "html", "docs/src", "docs/targets"]]
