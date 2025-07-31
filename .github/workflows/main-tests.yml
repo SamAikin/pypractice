@@ -1,4 +1,4 @@
-name: tests-main
+name: Run tests on push to main branch 
 
 on:
   push:
