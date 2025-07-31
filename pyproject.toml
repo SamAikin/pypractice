@@ -5,7 +5,7 @@ build-backend="hatchling.build"
 [project]
 name = "pypractice"
 description = "Backend model components for MVC of practice log / skill builder application"
-readme = {file = "readme.md", content-type = "text/markdown"}
+readme = {file = "./README.md", content-type = "text/markdown"}
 license = "MIT"
 authors = [
     {name = "Sam Aikin"},
