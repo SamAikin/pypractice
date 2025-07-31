@@ -10,6 +10,8 @@
 .docker/
 .tox/
 .mypy/
+.coverage/
+.coverage
 
 # python files
 .vscode

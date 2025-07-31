@@ -36,7 +36,8 @@ source = "vcs"
 
 [tool.tox]
 requires = ["tox>=4"]
-env_list = ["3.10", "3.11", "3.12", "3.13", "typecheck"]
+env_list = ["3.10", "3.11", "3.12", "3.13", "typecheck",]
+labels = { local_build = ['lint', 'docs', 'typecheck',] }
 
 [tool.tox.env_run_base]
 description = "Run pytest for each python version supported"
@@ -52,3 +53,9 @@ commands = [["mypy", "src{/}pypractice"]]
 description = "Build Sphinx Documentation"
 deps = ["sphinx>=8.2", "sphinx-toolbox"]
 commands = [["sphinx-build", "-M", "html", "docs/src", "docs/targets"]]
+
+[tool.tox.env.lint]
+description = "Any type of formatting as long as it's PEP8"
+deps = ["black>=25.1"]
+skip_install = true
+commands = [["black", "src/"], ["black", "tests/"]]

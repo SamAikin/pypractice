@@ -21,6 +21,7 @@ Status:
     :caption: Package Documentation
 
     overview
+    user
 
 
 Quick Start
