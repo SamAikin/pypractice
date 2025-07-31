@@ -2,7 +2,7 @@
 
 ## Status
 
-![Main Build](https://github.com/SamAikin/pypractice/actions/workflows/main-build.yml/badge.svg)
+![Main Tests](https://github.com/SamAikin/pypractice/actions/workflows/main-tests.yml/badge.svg)
 ![PR Tests](https://github.com/SamAikin/pypractice/actions/workflows/pr-test-checks.yml/badge.svg)
 
 ## Overview
