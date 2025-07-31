@@ -1,4 +1,4 @@
-name: run checks on wip push
+name: tests-main
 
 on:
   push:
