@@ -3,7 +3,8 @@
 ## Status
 
 ![Main Tests](https://github.com/SamAikin/pypractice/actions/workflows/main-tests.yml/badge.svg)
-![PR Tests](https://github.com/SamAikin/pypractice/actions/workflows/pr-test-checks.yml/badge.svg)
+![Docs Build](https://app.readthedocs.org/projects/samaikin-pypractice/badge/?version=stable&style=default)
+![PyPI Test](https://github.com/SamAikin/pypractice/actions/workflows/pypi-test-release.yml/badge.svg)
 
 ## Overview
 

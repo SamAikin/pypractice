@@ -17,7 +17,7 @@ keywords = [
     "mvc", "time tracking", "practice log", "practice session",
 ]
 classifiers = [
-    "Development Status :: 1 - Planning",
+    "Development Status :: 2 - Pre-Alpha",
 
     "Intended Audience :: Education",
     "Intended Audience :: Developers",
@@ -30,6 +30,9 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
 ]
+
+[project.urls]
+Documentation = "https://samaikin-pypractice.readthedocs.io/en/stable/"
 
 [tool.hatch.version]
 source = "vcs"
